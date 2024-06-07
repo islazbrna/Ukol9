@@ -1,12 +1,6 @@
 const obsah = document.querySelector('#obsah')
+
 console.log(obsah.innerHTML) 
-
-const button = document.querySelector('#button')
-
-/* if (button == '') {
-    button.classlist.add('fieldempty')
-} */
-
 console.log(document.querySelector('#email').textContent)
 
 const email = document.querySelector('#email')
@@ -28,32 +22,9 @@ email.addEventListener('input', (e) =>  {
     }
 })
  
-/* email.addEventListener('input', (e) =>  {
-    console.log(Number(e.target.value.length))
-    console.log(e.target.value)
-    console.log(e.target.value.indexOf('@'))
-    email.classList.add('redoutline')
-    if (Number(e.target.value.length) === 0 ){
-    email.classList.add('redoutline')
-    }
-    else if (Number(e.target.value.length) != 0){
-        email.classList.remove('redoutline')
-        if (e.target.value.indexOf('@') === -1){
-            email.classList.add('redoutline')
-        } else {
-            email.classList.remove('redoutline')
-        }
-    }
-}) */
-
-
 email.addEventListener('click', (e) =>  {
     email.classList.add('redoutline')
 })
-
-
-
-
 
 document.querySelector('#obsah').addEventListener('submit', (event) => {
 event.preventDefault()
